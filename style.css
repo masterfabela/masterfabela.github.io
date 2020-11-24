@@ -19,6 +19,10 @@ body {
   margin-top: 20%;
 }
 
+ul {
+  margin-top: 2rem;
+}
+
 li {
   margin: 0.5rem 0;
   list-style: none;
