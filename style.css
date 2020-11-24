@@ -11,9 +11,12 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   text-align: center;
   list-style: none;
+}
+
+.general-container {
+  margin-top: 20%;
 }
 
 li {
