@@ -1,3 +1,6 @@
 [submodule "awesome-js-animations"]
 	path = awesome-js-animations
 	url = https://github.com/masterfabela/awesome-js-animations.git
+[submodule "awesome-3d-animation"]
+	path = awesome-3d-animation
+	url = https://github.com/masterfabela/awesome-3d-animation.git
