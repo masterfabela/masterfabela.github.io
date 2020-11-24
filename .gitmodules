@@ -4,3 +4,9 @@
 [submodule "awesome-3d-animation"]
 	path = awesome-3d-animation
 	url = https://github.com/masterfabela/awesome-3d-animation.git
+[submodule "css-card-tricks"]
+	path = css-card-tricks
+	url = https://github.com/masterfabela/css-card-tricks.git
+[submodule "CSSThemeSwitcher"]
+	path = CSSThemeSwitcher
+	url = https://github.com/masterfabela/CSSThemeSwitcher.git
