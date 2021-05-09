@@ -10,3 +10,6 @@
 [submodule "CSSThemeSwitcher"]
 	path = CSSThemeSwitcher
 	url = https://github.com/masterfabela/CSSThemeSwitcher.git
+[submodule "google-clone"]
+	path = google-clone
+	url = https://github.com/masterfabela/google-clone.git
