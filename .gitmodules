@@ -13,3 +13,6 @@
 [submodule "google-clone"]
 	path = google-clone
 	url = https://github.com/masterfabela/google-clone.git
+[submodule "js-progress-bar-animate"]
+	path = js-progress-bar-animate
+	url = https://github.com/masterfabela/js-progress-bar-animate.git
