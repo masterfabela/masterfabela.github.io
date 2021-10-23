@@ -13,17 +13,61 @@ body {
   justify-content: center;
   text-align: center;
   list-style: none;
+  background-color: #861657;
+  background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%);
+}
+
+
+.proyectos{
+  background: #ffffff;
+  margin-top: 0.8rem;
+  font-size: 1.1em;
 }
 
 .general-container {
+  width: 20rem;
+  height: fit-content;
   margin-top: 20%;
+  background: rgba(255, 255, 255, 0.425);
+  border-radius: 1.5rem;
+  padding: 1.5rem 0;
+  box-shadow: 5px 7px 16px -2px rgba(95,95,95,0.63);
+}
+
+.general-container h2 {
+  font-size: 2em;
 }
 
 ul {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 
 li {
-  margin: 0.5rem 0;
+  border-bottom: 1px solid;
+  border-color: #8616573a;
+  padding: 0;
   list-style: none;
+}
+
+a {
+  padding: 0;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  max-height: 3rem;
+  transition:max-height 0.1s;
+  list-style: none;
+}
+
+a:hover {
+  padding: 0;
+  color:white;
+  list-style: square;
+  max-height:3.5rem;
+  transition:max-height 0.3s;
+  background-color: #86165763;
+  background-image: linear-gradient(326deg, #86165756 0%, #ffa69e 74%);
 }
