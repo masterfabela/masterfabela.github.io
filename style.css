@@ -6,6 +6,15 @@
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
+#map { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%; 
+  z-index: 1;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -18,38 +27,52 @@ body {
 }
 
 
-.proyectos{
+.general-container .proyectos{
   background: #ffffff;
   margin-top: 0.8rem;
   font-size: 1.1em;
 }
 
+#map .leaflet-pane {
+  z-index: 0;
+}
+
 .general-container {
   width: 20rem;
   height: fit-content;
-  margin-top: 11rem;
   background: rgba(255, 255, 255, 0.425);
   border-radius: 1.5rem;
   padding: 1.5rem 0;
   box-shadow: 5px 7px 16px -2px rgba(95,95,95,0.63);
+  z-index: 2;
+}
+
+.leaflet-control-zoom {
+  visibility: hidden;
+}
+
+.leaflet-control-attribution{
+  visibility: hidden;
 }
 
 .general-container h2 {
   font-size: 2em;
+  color: rgb(91, 81, 116);
 }
 
-ul {
+.general-container ul {
   margin-top: 0.5rem;
 }
 
-li {
+.general-container li {
   border-bottom: 1px solid;
   border-color: #8616573a;
   padding: 0;
   list-style: none;
 }
 
-a {
+#map .general-container a {
+  font-family: 'IBM Plex Sans', sans-serif;
   padding: 0;
   color: black;
   text-decoration: none;
@@ -62,12 +85,12 @@ a {
   list-style: none;
 }
 
-a:hover {
+.general-container a:hover {
   padding: 0;
   color:white;
   list-style: square;
   max-height:3.5rem;
   transition:max-height 0.3s;
-  background-color: #86165763;
-  background-image: linear-gradient(326deg, #86165756 0%, #ffa69e 74%);
+  background-color: #2e97dd63;
+  background-image: linear-gradient(326deg, #9290ee56 0%, #a2d7fa 74%);
 }
