@@ -83,6 +83,7 @@ body {
   max-height: 3rem;
   transition:max-height 0.1s;
   list-style: none;
+  transition: all .2s ease-in;
 }
 
 #map .general-container a:hover {
