@@ -8,7 +8,7 @@ const getRandomCoord = () => {
 };
 
 var map = L.map('map').setView([getRandomCoord(), getRandomCoord()], 6);
-L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '',
   maxZoom: 18,
   id: 'mapbox/streets-v11',
