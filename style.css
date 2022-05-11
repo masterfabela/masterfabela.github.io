@@ -85,7 +85,7 @@ body {
   list-style: none;
 }
 
-.general-container a:hover {
+#map .general-container a:hover {
   padding: 0;
   color:white;
   list-style: square;
