@@ -7,7 +7,17 @@ const getRandomCoord = () => {
   return firstCoord - getRandomNumber(70);
 };
 
-var map = L.map('map').setView([getRandomCoord(), getRandomCoord()], 6);
+const moveMapToRandomWithAnimation = (map, duration) => {
+  map.flyTo(getRandomCoords(), 8, {
+    duration: duration,
+  });
+};
+
+const getRandomCoords = () => {
+  return [getRandomCoord(), getRandomCoord()];
+};
+
+var map = L.map('map').setView(getRandomCoords(), 6);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '',
   maxZoom: 18,
@@ -16,3 +26,8 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   zoomOffset: -1,
   accessToken: 'your.mapbox.access.token',
 }).addTo(map);
+const duration = 40;
+moveMapToRandomWithAnimation(map, duration);
+setInterval(() => {
+  moveMapToRandomWithAnimation(map, duration);
+}, duration * 1000);
